@@ -13,8 +13,10 @@ if doggo in requested_doggo['message']:
     image_results = json.loads(requested_images.text)
     print(request.url)
     print(response)
-    print ("incoming ", doggo, " pics!\ngood boy! bork!")
     print (image_results)
+    print ("incoming ", doggo, " pics!\ngood boy! bork!")
+    from time import sleep
+    sleep(5)
     for doge in image_results['message']:
         webbrowser.open(doge)
 else:
